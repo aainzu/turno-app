@@ -1,0 +1,818 @@
+[
+    {
+      "fecha": "2025-08-18",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-08-19",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-08-20",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-08-21",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-08-22",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-08-23",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-08-24",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-08-25",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-08-26",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-08-27",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-08-28",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-08-29",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-08-30",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-08-31",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-09-01",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-09-02",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-09-03",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-09-04",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-09-05",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-09-06",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-09-07",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-09-08",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-09",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-10",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-11",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-12",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-13",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-14",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-15",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-16",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-17",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-18",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-19",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-20",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-21",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-22",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-23",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-24",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-25",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-26",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-27",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-28",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Vacaciones"
+    },
+    {
+      "fecha": "2025-09-29",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-09-30",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-01",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-10-02",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-03",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-04",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-05",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-10-06",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-07",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-08",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-09",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-10",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-11",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-10-12",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-10-13",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Festivo"
+    },
+    {
+      "fecha": "2025-10-14",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-15",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-10-16",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-17",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-18",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-19",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-10-20",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-21",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-22",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-10-23",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-24",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-25",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-26",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-10-27",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-28",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-29",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza LD"
+    },
+    {
+      "fecha": "2025-10-30",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-10-31",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-01",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-02",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-11-03",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-04",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-05",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza LD"
+    },
+    {
+      "fecha": "2025-11-06",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-07",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-08",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-09",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-11-10",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-11",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-12",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-11-13",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-14",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-15",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-11-16",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-11-17",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-18",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-19",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-11-20",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-21",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-22",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-23",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-11-24",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-25",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-26",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza LD"
+    },
+    {
+      "fecha": "2025-11-27",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-28",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-29",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-11-30",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-01",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-02",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-03",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza LD"
+    },
+    {
+      "fecha": "2025-12-04",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-05",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-06",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-07",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-12-08",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-09",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-10",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-11",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-12",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-13",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-12-14",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-12-15",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-16",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-17",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-12-18",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-19",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-20",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-21",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-22",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-23",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-24",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-25",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Festivo"
+    },
+    {
+      "fecha": "2025-12-26",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-27",
+      "turno": "mañana",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-28",
+      "turno": null,
+      "esVacaciones": true,
+      "notas": "Libranza"
+    },
+    {
+      "fecha": "2025-12-29",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-30",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    },
+    {
+      "fecha": "2025-12-31",
+      "turno": "tarde",
+      "esVacaciones": false,
+      "notas": ""
+    }
+  ]
