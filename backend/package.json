@@ -12,7 +12,14 @@
     "start": "node dist/index.js",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "db:setup": "node scripts/setup-cosmosdb.js",
+    "db:migrate": "node scripts/migrate-data.js",
+    "db:status": "node scripts/cosmos-utils.js status",
+    "db:stats": "node scripts/cosmos-utils.js stats",
+    "db:backup": "node scripts/cosmos-utils.js backup",
+    "db:utils": "node scripts/cosmos-utils.js",
+    "db:wizard": "node scripts/setup-wizard.js"
   },
   "dependencies": {
     "@azure/cosmos": "^4.0.0",

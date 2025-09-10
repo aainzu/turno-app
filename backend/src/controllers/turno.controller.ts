@@ -169,10 +169,11 @@ export class TurnoController {
       const dataRows = jsonData.slice(1);
 
       // Convert to objects
-      const excelData = dataRows.map((row: any[]) => {
+      const excelData = dataRows.map((row: unknown) => {
+        const rowArray = row as any[];
         const obj: any = {};
         headers.forEach((header, index) => {
-          obj[header.toLowerCase().trim()] = row[index];
+          obj[header.toLowerCase().trim()] = rowArray[index];
         });
         return obj;
       });

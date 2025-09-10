@@ -9,6 +9,8 @@ export interface TurnoData {
   id: string;
   fecha: string;
   turno?: 'mañana' | 'tarde' | 'noche';
+  startShift?: string; // HH:MM format
+  endShift?: string; // HH:MM format
   esVacaciones: boolean;
   notas?: string;
   personaId?: string;
@@ -101,6 +103,8 @@ class ApiClient {
   async upsertTurno(turnoData: {
     fecha: string;
     turno?: 'mañana' | 'tarde' | 'noche';
+    startShift?: string;
+    endShift?: string;
     esVacaciones: boolean;
     notas?: string;
     personaId?: string;

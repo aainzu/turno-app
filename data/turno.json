@@ -2,12 +2,16 @@
     {
       "fecha": "2025-08-18",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-08-19",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -20,12 +24,16 @@
     {
       "fecha": "2025-08-21",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-08-22",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -44,12 +52,16 @@
     {
       "fecha": "2025-08-25",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-08-26",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -62,6 +74,8 @@
     {
       "fecha": "2025-08-28",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -74,6 +88,8 @@
     {
       "fecha": "2025-08-30",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -86,24 +102,32 @@
     {
       "fecha": "2025-09-01",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-09-02",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-09-03",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-09-04",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -116,6 +140,8 @@
     {
       "fecha": "2025-09-06",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -254,12 +280,16 @@
     {
       "fecha": "2025-09-29",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-09-30",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -272,18 +302,24 @@
     {
       "fecha": "2025-10-02",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-03",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-04",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -296,30 +332,40 @@
     {
       "fecha": "2025-10-06",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-07",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-08",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-09",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-10",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -344,6 +390,8 @@
     {
       "fecha": "2025-10-14",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -356,18 +404,24 @@
     {
       "fecha": "2025-10-16",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-17",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-18",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -380,12 +434,16 @@
     {
       "fecha": "2025-10-20",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-21",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -398,18 +456,24 @@
     {
       "fecha": "2025-10-23",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-24",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-25",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -422,12 +486,16 @@
     {
       "fecha": "2025-10-27",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-28",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -440,18 +508,24 @@
     {
       "fecha": "2025-10-30",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-10-31",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-01",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -464,12 +538,16 @@
     {
       "fecha": "2025-11-03",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-04",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -482,18 +560,24 @@
     {
       "fecha": "2025-11-06",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-07",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-08",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -506,12 +590,16 @@
     {
       "fecha": "2025-11-10",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-11",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -524,12 +612,16 @@
     {
       "fecha": "2025-11-13",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-14",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -548,12 +640,16 @@
     {
       "fecha": "2025-11-17",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-18",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -566,18 +662,24 @@
     {
       "fecha": "2025-11-20",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-21",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-22",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -590,12 +692,16 @@
     {
       "fecha": "2025-11-24",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-25",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -608,36 +714,48 @@
     {
       "fecha": "2025-11-27",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-28",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-29",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-11-30",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-01",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-02",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -650,18 +768,24 @@
     {
       "fecha": "2025-12-04",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-05",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-06",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -674,30 +798,40 @@
     {
       "fecha": "2025-12-08",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-09",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-10",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-11",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-12",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -716,12 +850,16 @@
     {
       "fecha": "2025-12-15",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-16",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -734,42 +872,56 @@
     {
       "fecha": "2025-12-18",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-19",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-20",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-21",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-22",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-23",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-24",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -782,12 +934,16 @@
     {
       "fecha": "2025-12-26",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-27",
       "turno": "mañana",
+      "startShift": "07:30",
+      "endShift": "15:00",
       "esVacaciones": false,
       "notas": ""
     },
@@ -800,18 +956,24 @@
     {
       "fecha": "2025-12-29",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-30",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     },
     {
       "fecha": "2025-12-31",
       "turno": "tarde",
+      "startShift": "14:30",
+      "endShift": "22:00",
       "esVacaciones": false,
       "notas": ""
     }

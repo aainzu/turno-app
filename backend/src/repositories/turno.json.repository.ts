@@ -64,6 +64,8 @@ export class JsonTurnoRepository {
       id: generateTurnoId(jsonItem.fecha),
       fecha: jsonItem.fecha,
       turno: jsonItem.turno || undefined,
+      startShift: (jsonItem as any).startShift || undefined,
+      endShift: (jsonItem as any).endShift || undefined,
       esVacaciones: jsonItem.esVacaciones,
       notas: jsonItem.notas || '',
       createdAt: now,

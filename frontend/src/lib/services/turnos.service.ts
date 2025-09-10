@@ -12,6 +12,8 @@ export type TurnoType = 'mañana' | 'tarde' | 'noche';
 export interface TurnoInsert {
   fecha: string;
   turno?: TurnoType;
+  startShift?: string;
+  endShift?: string;
   esVacaciones: boolean;
   notas?: string;
   personaId?: string;
@@ -74,6 +76,11 @@ export class TurnosService {
       // Business rules validation (backend will also validate)
       if (data.turno && data.esVacaciones) {
         throw new Error('No se puede tener un turno específico y marcar como vacaciones al mismo tiempo');
+      }
+
+      // Validate shift times
+      if ((data.startShift && !data.endShift) || (!data.startShift && data.endShift)) {
+        throw new Error('Debe proporcionar tanto la hora de inicio como la hora de fin del turno, o ninguna de las dos');
       }
 
       const response = await apiClient.upsertTurno(data);

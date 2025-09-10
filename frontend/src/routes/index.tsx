@@ -131,7 +131,7 @@ export default component$(() => {
             </div>
           ) : (
             <TurnoCard
-              turno={todayData.value.turno}
+              turno={todayData.value.turno || null}
               fecha={new Date(todayData.value.fecha + 'T00:00:00')}
               showDate={false}
             />

@@ -5,6 +5,8 @@ export function mapExcelRowToTurno(excelRow: ExcelRow): TurnoInsert {
   return {
     fecha: excelRow.fecha,
     turno: excelRow.vacaciones ? undefined : excelRow.turno as 'mañana' | 'tarde' | 'noche',
+    startShift: excelRow.vacaciones ? undefined : (excelRow as any).startshift,
+    endShift: excelRow.vacaciones ? undefined : (excelRow as any).endshift,
     esVacaciones: excelRow.vacaciones,
     notas: excelRow.notas || '',
   };

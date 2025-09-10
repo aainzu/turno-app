@@ -35,7 +35,7 @@ export const useWeekTurnos = routeLoader$(async (requestEvent) => {
 
     // Crear un mapa para acceso rápido a los turnos por fecha
     const turnosMap = new Map();
-    turnosResult.items.forEach(turno => {
+    turnosResult?.items.forEach(turno => {
       turnosMap.set(turno.fecha, turno);
     });
 

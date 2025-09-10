@@ -2,10 +2,10 @@ import { component$ } from '@builder.io/qwik';
 import { Card } from '../ui/Card';
 import { Chip } from '../ui/Chip';
 import { formatDateForDisplay, formatDateShort, isToday } from '../../lib/utils/date';
-import type { Turno } from '../../lib/db/schema';
+import type { TurnoData } from '../../lib/api/client';
 
 export type TurnoCardProps = {
-  turno: Turno | null;
+  turno: TurnoData | null;
   fecha: string | Date;
   showDate?: boolean;
   compact?: boolean;
@@ -91,12 +91,23 @@ export const TurnoCard = component$<TurnoCardProps>(({
       </div>
 
       {turno ? (
-        <div class="flex items-center gap-2">
+        <div class="space-y-2">
+          {/* Shift times */}
+          {turno.startShift && turno.endShift && (
+            <div class="flex items-center gap-2">
+              <span class="text-sm text-gray-600">Horario:</span>
+              <p class="text-sm text-gray-900 font-medium">
+                {turno.startShift} - {turno.endShift}
+              </p>
+            </div>
+          )}
+          
+          {/* Notes */}
           {turno.notas && (
-            <>
-              <span class="text-md text-gray-600">Notas:</span>
-              <p class="text-md text-gray-900">{turno.notas}</p>
-            </>
+            <div class="flex items-center gap-2">
+              <span class="text-sm text-gray-600">Notas:</span>
+              <p class="text-sm text-gray-900">{turno.notas}</p>
+            </div>
           )}
         </div>
       ) :

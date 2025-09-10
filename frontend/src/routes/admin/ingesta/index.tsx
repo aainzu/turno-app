@@ -1,4 +1,4 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, useSignal, $ } from "@builder.io/qwik";
 import { routeAction$, Form } from "@builder.io/qwik-city";
 import { MainLayout } from "../../../components/layout/MainLayout";
 import { Button } from "../../../components/ui/Button";
@@ -20,11 +20,12 @@ const useFileState = () => {
   };
 };
 
-// Acción para subir archivo (simulada por ahora)
-export const useUploadFile = routeAction$(async (formData) => {
+// Acción para subir archivo
+export const useUploadFile = routeAction$(async (form, requestEvent) => {
   try {
+    const formData = await requestEvent.parseBody() as FormData;
     const file = formData.get('file') as File;
-
+    
     if (!file) {
       return {
         success: false,
@@ -32,24 +33,37 @@ export const useUploadFile = routeAction$(async (formData) => {
       };
     }
 
-    // Aquí iría la lógica real de subida
-    // Simulamos un resultado exitoso
-    await new Promise(resolve => setTimeout(resolve, 2000)); // Simular delay
+    // Create FormData for API call
+    const apiFormData = new FormData();
+    apiFormData.append('file', file);
+
+    // Get API URL from environment
+    const apiUrl = process.env.VITE_API_URL || 'http://localhost:3001/api';
+    
+    // Call backend API
+    const response = await fetch(`${apiUrl}/turnos/excel`, {
+      method: 'POST',
+      body: apiFormData,
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      return {
+        success: false,
+        error: result.error || 'Error al procesar el archivo',
+      };
+    }
 
     return {
       success: true,
-      result: {
-        inserted: 5,
-        updated: 2,
-        skipped: 1,
-        warnings: ['Algunos turnos ya existían y fueron actualizados'],
-        message: 'Archivo procesado exitosamente',
-      },
+      result: result.details,
     };
   } catch (error) {
+    console.error('Error uploading file:', error);
     return {
       success: false,
-      error: 'Error al procesar el archivo',
+      error: 'Error de conexión con el servidor',
     };
   }
 });
@@ -338,6 +352,18 @@ export default component$(() => {
                       <td class="px-6 py-4 text-sm text-gray-500">TRUE/FALSE, 1/0, sí/no</td>
                     </tr>
                     <tr class="bg-gray-50">
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">startshift</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Texto</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">No</td>
+                      <td class="px-6 py-4 text-sm text-gray-500">Hora de inicio del turno (HH:MM, ej: 08:00)</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">endshift</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Texto</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">No</td>
+                      <td class="px-6 py-4 text-sm text-gray-500">Hora de fin del turno (HH:MM, ej: 16:00)</td>
+                    </tr>
+                    <tr class="bg-gray-50">
                       <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">notas</td>
                       <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Texto</td>
                       <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">No</td>
@@ -359,8 +385,10 @@ export default component$(() => {
                     <div class="mt-2 text-sm text-blue-700">
                       <ul class="list-disc list-inside space-y-1">
                         <li>La primera fila debe contener los encabezados exactamente como se muestran</li>
-                        <li>Si <code>vacaciones</code> es verdadero, el campo <code>turno</code> puede estar vacío</li>
+                        <li>Si <code>vacaciones</code> es verdadero, los campos <code>turno</code>, <code>startshift</code> y <code>endshift</code> pueden estar vacíos</li>
                         <li>Las fechas se normalizarán automáticamente al formato YYYY-MM-DD</li>
+                        <li>Las horas se normalizarán automáticamente al formato HH:MM (24 horas)</li>
+                        <li>Si se especifica <code>startshift</code>, también se debe especificar <code>endshift</code> y viceversa</li>
                         <li>Los turnos existentes se actualizarán si ya existe un registro para esa fecha</li>
                       </ul>
                     </div>

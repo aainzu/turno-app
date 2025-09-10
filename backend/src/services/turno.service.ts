@@ -54,14 +54,34 @@ export class TurnoService {
         validatedData.fecha = normalizeDateInput(validatedData.fecha);
       }
 
-      // Business rules: if on vacation, turno should be null
+      // Business rules: if on vacation, turno and shift times should be null
       if (validatedData.esVacaciones) {
         validatedData.turno = undefined;
+        validatedData.startShift = undefined;
+        validatedData.endShift = undefined;
       }
 
       // Business rules: if there's a turno, can't be on vacation
       if (validatedData.turno && validatedData.esVacaciones) {
         throw new Error('No se puede tener un turno específico y marcar como vacaciones al mismo tiempo');
+      }
+
+      // Business rules: start and end shift should be provided together or not at all
+      if ((validatedData.startShift && !validatedData.endShift) || (!validatedData.startShift && validatedData.endShift)) {
+        throw new Error('Debe proporcionar tanto la hora de inicio como la hora de fin del turno, o ninguna de las dos');
+      }
+
+      // Business rules: start shift should be before end shift
+      if (validatedData.startShift && validatedData.endShift) {
+        const [startHour, startMin] = validatedData.startShift.split(':').map(Number);
+        const [endHour, endMin] = validatedData.endShift.split(':').map(Number);
+        const startMinutes = startHour * 60 + startMin;
+        const endMinutes = endHour * 60 + endMin;
+        
+        // Allow overnight shifts (end time next day)
+        if (startMinutes >= endMinutes && endMinutes !== 0) {
+          throw new Error('La hora de inicio debe ser anterior a la hora de fin (excepto para turnos nocturnos que cruzan medianoche)');
+        }
       }
 
       const turno = await turnoRepository.upsert(validatedData);
@@ -98,6 +118,8 @@ export class TurnoService {
         const turnoData: TurnoInsert = {
           fecha: validatedRow.fecha,
           turno: validatedRow.vacaciones ? undefined : (validatedRow.turno as TurnoType),
+          startShift: validatedRow.vacaciones ? undefined : validatedRow.startshift,
+          endShift: validatedRow.vacaciones ? undefined : validatedRow.endshift,
           esVacaciones: validatedRow.vacaciones,
           notas: validatedRow.notas || '',
         };

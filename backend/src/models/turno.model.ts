@@ -8,6 +8,8 @@ export interface TurnoDocument {
   id: string; // CosmosDB document id
   fecha: string; // YYYY-MM-DD format (also partition key)
   turno?: TurnoType;
+  startShift?: string; // HH:MM format (24-hour)
+  endShift?: string; // HH:MM format (24-hour)
   esVacaciones: boolean;
   notas?: string;
   personaId?: string; // For future multi-user support
@@ -24,6 +26,8 @@ export interface TurnoDocument {
 export const turnoInsertSchema = z.object({
   fecha: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Formato de fecha debe ser YYYY-MM-DD'),
   turno: z.enum(['mañana', 'tarde', 'noche']).optional(),
+  startShift: z.string().regex(/^([01]\d|2[0-3]):([0-5]\d)$/, 'Formato de hora debe ser HH:MM (24 horas)').optional(),
+  endShift: z.string().regex(/^([01]\d|2[0-3]):([0-5]\d)$/, 'Formato de hora debe ser HH:MM (24 horas)').optional(),
   esVacaciones: z.boolean().default(false),
   notas: z.string().optional().default(''),
   personaId: z.string().optional(),
@@ -56,6 +60,68 @@ export const excelRowSchema = z.object({
     throw new Error(`Invalid date format: ${cleaned}`);
   }),
   turno: z.string().optional().transform((val) => val?.toLowerCase().trim()),
+  startshift: z.string().optional().transform((val) => {
+    if (!val || val.trim() === '') return undefined;
+    const cleaned = val.trim();
+    // Handle various time formats and convert to HH:MM
+    const timeRegex = /^(\d{1,2}):?(\d{2})?\s*(am|pm)?$/i;
+    const match = cleaned.match(timeRegex);
+    if (match) {
+      let [, hours, minutes = '00', ampm] = match;
+      let hour = parseInt(hours);
+      const min = parseInt(minutes);
+      
+      // Handle AM/PM
+      if (ampm) {
+        const isAM = ampm.toLowerCase() === 'am';
+        if (isAM && hour === 12) hour = 0;
+        else if (!isAM && hour !== 12) hour += 12;
+      }
+      
+      // Validate ranges
+      if (hour < 0 || hour > 23 || min < 0 || min > 59) {
+        throw new Error(`Invalid time format: ${cleaned}`);
+      }
+      
+      return `${hour.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}`;
+    }
+    // If already in HH:MM format, validate and return
+    if (/^([01]\d|2[0-3]):([0-5]\d)$/.test(cleaned)) {
+      return cleaned;
+    }
+    throw new Error(`Invalid time format: ${cleaned}`);
+  }),
+  endshift: z.string().optional().transform((val) => {
+    if (!val || val.trim() === '') return undefined;
+    const cleaned = val.trim();
+    // Handle various time formats and convert to HH:MM
+    const timeRegex = /^(\d{1,2}):?(\d{2})?\s*(am|pm)?$/i;
+    const match = cleaned.match(timeRegex);
+    if (match) {
+      let [, hours, minutes = '00', ampm] = match;
+      let hour = parseInt(hours);
+      const min = parseInt(minutes);
+      
+      // Handle AM/PM
+      if (ampm) {
+        const isAM = ampm.toLowerCase() === 'am';
+        if (isAM && hour === 12) hour = 0;
+        else if (!isAM && hour !== 12) hour += 12;
+      }
+      
+      // Validate ranges
+      if (hour < 0 || hour > 23 || min < 0 || min > 59) {
+        throw new Error(`Invalid time format: ${cleaned}`);
+      }
+      
+      return `${hour.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}`;
+    }
+    // If already in HH:MM format, validate and return
+    if (/^([01]\d|2[0-3]):([0-5]\d)$/.test(cleaned)) {
+      return cleaned;
+    }
+    throw new Error(`Invalid time format: ${cleaned}`);
+  }),
   vacaciones: z.union([
     z.string(),
     z.number(),
@@ -90,6 +156,8 @@ export function createTurnoDocument(data: TurnoInsert): TurnoDocument {
     id: generateTurnoId(data.fecha, data.personaId),
     fecha: data.fecha,
     turno: data.turno,
+    startShift: data.startShift,
+    endShift: data.endShift,
     esVacaciones: data.esVacaciones,
     notas: data.notas || '',
     personaId: data.personaId,
